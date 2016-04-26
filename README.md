@@ -26,5 +26,7 @@ git status
 git add -A  *Add files to the index*
 git commit -m "message" *Record changes to the repository*
 git push origin master *Send the changes to the master and sync*
+
+git checkout -b *branch_name* *Create a new local branch "branch_name"*
 ```
 
