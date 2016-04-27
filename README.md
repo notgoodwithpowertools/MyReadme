@@ -21,12 +21,28 @@ curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 
 
 ## My useful git commands
+Get status
 ```
 git status
-git add -A  *Add files to the index*
-git commit -m "message" *Record changes to the repository*
-git push origin master *Send the changes to the master and sync*
-
-git checkout -b *branch_name* *Create a new local branch "branch_name"*
 ```
-
+Add files to the index
+```
+git add -A
+```
+Record changes to the repository
+```
+git commit -m "message"
+```
+Send the changes to the master and sync
+```
+git push origin master
+```
+Create a new local branch "branch_name
+```
+git checkout -b *branch_name*
+```
+Restore to a previous known branch state. Prior to the reset (below) delete the node_modules. Then run npm install to rebuild npm environment.
+```
+git checkout branch_name
+git reset --hard branch_name
+```
