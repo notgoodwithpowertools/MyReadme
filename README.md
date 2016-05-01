@@ -6,12 +6,16 @@ Some general info for setup
 ```
 sudo apt-get install git
 ```
+- Download Atom editor
+```
+sudo dpkg -i atom-amd64.deb
+```
 - Install Atom editor
 ```
-http GET https://atom.io/download/atom-shell/v0.36.8/node-v0.36.8.tar.gz
+sudo dpkg -i atom-amd64.deb
 ```
 - Install Atom packages
-- - React
+- React
 
 ## Installing Node and NPM
 See https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
