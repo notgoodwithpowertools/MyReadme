@@ -57,3 +57,7 @@ git clean -f - Removes Unstaged UnTracked files ONLY [Type 3]
 git reset --hard - Removes Staged Tracked and UnStaged Tracked files ONLY[Type 1, Type 2]
 git stash -u - Removes all changes [Type 1, Type 2, Type 3]
 ```
+Download and create a local branch
+```
+git clone https://github.com/notgoodwithpowertools/react-node-template.git react-node-template
+```
