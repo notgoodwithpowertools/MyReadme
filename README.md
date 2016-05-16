@@ -22,6 +22,20 @@ See https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linu
 ```
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 ```
+### Setting Up an Express Server
+Set up a share from current project directory
+```
+var dir =  process.cwd();
+console.log('PWDirectory...' + dir);
+app.use('/current', express.static(dir + '/public'));
+```
+node ../../Node/expapp/app.js
+PWDirectory.../home/andrew/React/react-node-es6-router
+Working directory - /home/andrew/Node/expapp
+Example app listening on port...8081
+Directory.../home/andrew/Node/expapp
+
+
 
 
 ## My useful git commands
