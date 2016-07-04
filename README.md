@@ -80,6 +80,7 @@ Create a new repo and upload local environment
 ```
 git init
 git remote -v (view origin and remote)
+git remote add origin https://github.com/notgoodwithpowertools/```repo name```.git
 git checkout -b new_branch_name
 git push origin new_branch_name
 ```
