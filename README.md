@@ -84,3 +84,8 @@ git remote add origin https://github.com/notgoodwithpowertools/```repo name```.g
 git checkout -b new_branch_name
 git push origin new_branch_name
 ```
+## Generating a ssh file
+```
+ssh-keygen -t rsa -b 4096 -C 'email'
+```
+
