@@ -84,14 +84,14 @@ git remote add origin https://github.com/notgoodwithpowertools/```repo name```.g
 git checkout -b new_branch_name
 git push origin new_branch_name
 ```
-If you’re working out of another branch locally, you can either merge to master before pushing, or specify that you want to push your local branch to a remote master. To push a branch other than master, use this syntax:
-```
-git push heroku yourbranch:master
-```
+If you’re working out of another branch locally, you can either merge to master before pushing, or specify that you want to push your local branch to a remote master. 
+
+# Using Heroku
+- Install Heroku Toolbelt
+- To create an Heroku system simply use ```Heroku create```
+- To push code ```git push heroku master```
+- To push a branch other than master use ```git push heroku ```*yourbranch*```:master```
 ## Generating a ssh file
 ```
 ssh-keygen -t rsa -b 4096 -C 'email'
 ```
-
-
-
