@@ -80,7 +80,7 @@ Create a new repo and upload local environment
 ```
 git init
 git remote -v (view origin and remote)
-git remote add origin https://github.com/notgoodwithpowertools/```repo name```.git
+git remote add origin https://github.com/notgoodwithpowertools/repo name.git
 git checkout -b new_branch_name
 git push origin new_branch_name
 ```
@@ -91,7 +91,8 @@ If you’re working out of another branch locally, you can either merge to maste
 - To create an Heroku system simply use ```Heroku create```
 - To push code ```git push heroku master```
 - To push a branch other than master use ```git push heroku ```*yourbranch*```:master```
-## Generating a ssh file
+
+# Generating a ssh file
 ```
 ssh-keygen -t rsa -b 4096 -C 'email'
 ```
