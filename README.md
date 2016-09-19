@@ -95,4 +95,6 @@ If you’re working out of another branch locally, you can either merge to maste
 # Generating a ssh file
 ```
 ssh-keygen -t rsa -b 4096 -C 'email'
+
+git remote set-url origin git@github.com:<Username>/<Project>.git
 ```
