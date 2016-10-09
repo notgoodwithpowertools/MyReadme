@@ -98,3 +98,8 @@ ssh-keygen -t rsa -b 4096 -C 'email'
 
 git remote set-url origin git@github.com:<Username>/<Project>.git
 ```
+# Installing NVM
+Check out https://github.com/creationix/nvm#verify-installation
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
+```
