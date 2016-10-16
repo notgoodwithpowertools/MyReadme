@@ -15,7 +15,7 @@ sudo dpkg -i atom-amd64.deb
 sudo dpkg -i atom-amd64.deb
 ```
 - Install Atom packages
-- React
+- atom-beautify, react
 
 ## Installing Node and NPM
 See https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
