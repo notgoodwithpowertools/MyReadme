@@ -98,6 +98,12 @@ ssh-keygen -t rsa -b 4096 -C 'email'
 
 git remote set-url origin git@github.com:<Username>/<Project>.git
 ```
+If it is set upfor SSH and you want to temporarily use http(s) use:
+```
+git push https://github.com/<userid>/<repository> master
+```
+It should ask you to authenticate
+
 # Installing NVM
 Check out https://github.com/creationix/nvm#verify-installation
 ```
