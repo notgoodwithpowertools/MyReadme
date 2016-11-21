@@ -87,7 +87,8 @@ git push origin new_branch_name
 If you’re working out of another branch locally, you can either merge to master before pushing, or specify that you want to push your local branch to a remote master. 
 
 # Using Heroku
-- Install Heroku Toolbelt - [toolbelt.heroku.com](http://toolbelt.heroku.com)
+- Install Heroku Toolbelt - Download toolbelt [toolbelt.heroku.com](http://toolbelt.heroku.com) `$ wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh`
+- Install package `heroku`
 - To create an Heroku system simply use ```Heroku create```
 - To push code ```git push heroku master```
 - To push a branch other than master use ```git push heroku ```*yourbranch*```:master```
