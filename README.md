@@ -12,7 +12,7 @@ sudo dpkg -i atom-amd64.deb
 ```
 - Install Atom editor
 ```
-sudo dpkg -i atom-amd64.deb
+sudo add-apt-repository ppa:webupd8team/atom
 ```
 - Install Atom packages
 - atom-beautify, react
@@ -109,4 +109,18 @@ It should ask you to authenticate
 Check out https://github.com/creationix/nvm#verify-installation
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
+```
+```
+andrew@andrew-virtual-machine:~$ nvm install 8.1.3
+Downloading and installing node v8.1.3...
+Downloading https://nodejs.org/dist/v8.1.3/node-v8.1.3-linux-x64.tar.xz...
+######################################################################## 100.0%
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v8.1.3 (npm v5.0.3)
+Creating default alias: default -> 8.1.3 (-> v8.1.3)
+andrew@andrew-virtual-machine:~$ npm --version
+5.0.3
+andrew@andrew-virtual-machine:~$ npm config get prefix
+/home/andrew/.nvm/versions/node/v8.1.3
 ```
