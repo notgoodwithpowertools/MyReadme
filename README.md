@@ -93,6 +93,9 @@ If you’re working out of another branch locally, you can either merge to maste
 - To push code ```git push heroku master```
 - To push a branch other than master use ```git push heroku ```*yourbranch*```:master```
 
+- If you are recreating a git downloaded project add the heroku remote 
+```heroku git:remote -a footy-tips-2```
+
 # Generating a ssh file
 ```
 ssh-keygen -t rsa -b 4096 -C 'email'
