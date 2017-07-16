@@ -127,3 +127,7 @@ andrew@andrew-virtual-machine:~$ npm --version
 andrew@andrew-virtual-machine:~$ npm config get prefix
 /home/andrew/.nvm/versions/node/v8.1.3
 ```
+# Verify globally installed npm packages
+```
+npm list -g --depth=0
+```
