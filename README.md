@@ -113,6 +113,7 @@ Check out https://github.com/creationix/nvm#verify-installation
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
 ```
+```
 nvm install node
 ```
 Or install a specific version...
