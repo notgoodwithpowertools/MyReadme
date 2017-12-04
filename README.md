@@ -113,6 +113,9 @@ Check out https://github.com/creationix/nvm#verify-installation
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
 ```
+nvm install node
+```
+Or install a specific version...
 ```
 andrew@andrew-virtual-machine:~$ nvm install 8.1.3
 Downloading and installing node v8.1.3...
