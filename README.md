@@ -135,3 +135,5 @@ andrew@andrew-virtual-machine:~$ npm config get prefix
 ```
 npm list -g --depth=0
 ```
+# If not reloading doesn't work
+https://github.com/webpack/docs/wiki/troubleshooting#not-enough-watchers
