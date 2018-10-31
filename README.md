@@ -139,7 +139,7 @@ npm list -g --depth=0
 # Baseline App Framework
 ## Create React App
 ```
-npx create-react-app 
+npx create-react-app <app_name>
 ```
 ### Install packages
 ```
