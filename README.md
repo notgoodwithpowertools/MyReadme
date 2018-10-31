@@ -135,5 +135,8 @@ andrew@andrew-virtual-machine:~$ npm config get prefix
 ```
 npm list -g --depth=0
 ```
-# If not reloading doesn't work
+# If hot reloading doesn't work
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
 https://github.com/webpack/docs/wiki/troubleshooting#not-enough-watchers
