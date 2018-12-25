@@ -2,6 +2,13 @@
 Some general info for setup
 
 # Setting Up Ubuntu in a VM
+- Installing VMware tools
+Seems that while open-vm-tools is installed (after the fast install) it doesn't work very well. It can be made to work ok so you don't have to install the packaged version
+From https://github.com/vmware/open-vm-tools/issues/54
+```
+sudo apt-get install --reinstall open-vm-tools
+```
+This gets the screen resizing working after install. Also, deselect/reselect shared folders and this enabled this function
 - Install git
 ```
 sudo apt-get install git
