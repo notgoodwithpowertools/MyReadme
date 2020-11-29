@@ -13,6 +13,10 @@ This gets the screen resizing working after install. Also, deselect/reselect sha
 ```
 sudo apt-get install git
 ```
+Install packages from Snap
+- Gimp
+- VS Code
+
 - Download Atom editor
 ```
 sudo dpkg -i atom-amd64.deb
