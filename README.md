@@ -168,6 +168,9 @@ To test
 npm run start
 ```
 ### Firebase Hosting Config
+```
+npm install -g firebase-tools
+```
 
 For Firebase hosting, first initialize Firebase
 ```
