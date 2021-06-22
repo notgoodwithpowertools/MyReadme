@@ -46,8 +46,12 @@ Working directory - /home/andrew/Node/expapp
 Example app listening on port...8081
 Directory.../home/andrew/Node/expapp
 
-
-
+### Ubuntu network interface issues
+If the network interface disappears from the GUI try
+```
+$ sudo nmcli networking off
+$ sudo nmcli networking on
+```
 
 ## My useful git commands
 Get status
