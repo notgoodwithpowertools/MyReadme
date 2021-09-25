@@ -216,3 +216,9 @@ i  Writing project information to .firebaserc...
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
 https://github.com/webpack/docs/wiki/troubleshooting#not-enough-watchers
+
+### Copy working files to backup using rsync
+```
+rsync -av --no-perms --no-owner --no-group --exclude '*/node_modules' /home/andrew/MEGASync/ /mnt/hgfs/Downloads/Code2
+```
+
