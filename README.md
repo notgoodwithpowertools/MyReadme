@@ -52,6 +52,10 @@ If the network interface disappears from the GUI try
 $ sudo nmcli networking off
 $ sudo nmcli networking on
 ```
+or better
+```
+sudo systemctl restart NetworkManager.service
+```
 
 ## My useful git commands
 Get status
