@@ -22,7 +22,9 @@ sudo apt-get install git
 Install packages from Snap
 - Gimp
 - VS Code
-
+```
+sudo snap install --classic code
+```
 - Download Atom editor
 ```
 sudo dpkg -i atom-amd64.deb
