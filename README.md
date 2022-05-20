@@ -79,7 +79,11 @@ Record changes to the repository
 git commit -m "message"
 ```
 Send the changes to the master and sync
+1) First set the remote using the github key
+2) Push changes
+
 ```
+git remote set-url origin https://REPLACE-WITH-TOKEN@github.com/REPLACE-WITH-USERNAME/REPLACE-REPO-NAME.git/
 git push origin master
 ```
 Create a new local branch "branch_name
