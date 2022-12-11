@@ -238,3 +238,8 @@ https://github.com/webpack/docs/wiki/troubleshooting#not-enough-watchers
 rsync -av --no-perms --no-owner --no-group --exclude '*/node_modules' /home/andrew/MEGASync/ /mnt/hgfs/Downloads/Code2
 ```
 
+## Firebase Cloud Functions & CORS
+
+Best most useful article I could find ...
+
+https://haha.world/firebase-cors/
