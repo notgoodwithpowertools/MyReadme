@@ -233,9 +233,9 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 ```
 https://github.com/webpack/docs/wiki/troubleshooting#not-enough-watchers
 
-### Copy working files to backup using rsync
+# Copy working files to backup using rsync
 ```
-rsync -av --no-perms --no-owner --no-group --exclude '*/node_modules' /home/andrew/MEGASync/ /mnt/hgfs/Downloads/Code2
+rsync -av --no-perms --no-owner --no-group --mkpath --exclude '*/node_modules' /home/andrew/Code/ /mnt/hgfs/andrew/Downloads/codebackup/U-2204-Code3-14-12-22
 ```
 
 ## Firebase Cloud Functions & CORS
