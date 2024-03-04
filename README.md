@@ -243,3 +243,11 @@ rsync -av --no-perms --no-owner --no-group --mkpath --exclude '*/node_modules' /
 Best most useful article I could find ...
 
 https://haha.world/firebase-cors/
+
+# Installing Java into Ubuntu
+```
+$ sudo apt install default-jre
+openjdk version "17.0.10" 2024-01-16
+OpenJDK Runtime Environment (build 17.0.10+7-Ubuntu-123.10.1)
+OpenJDK 64-Bit Server VM (build 17.0.10+7-Ubuntu-123.10.1, mixed mode, sharing)
+```
