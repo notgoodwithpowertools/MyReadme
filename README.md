@@ -251,3 +251,5 @@ openjdk version "17.0.10" 2024-01-16
 OpenJDK Runtime Environment (build 17.0.10+7-Ubuntu-123.10.1)
 OpenJDK 64-Bit Server VM (build 17.0.10+7-Ubuntu-123.10.1, mixed mode, sharing)
 ```
+# Getting Ubuntu sound working in Fusion VM
+https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Troubleshooting#stuttering-audio-in-virtual-machine
