@@ -252,4 +252,28 @@ OpenJDK Runtime Environment (build 17.0.10+7-Ubuntu-123.10.1)
 OpenJDK 64-Bit Server VM (build 17.0.10+7-Ubuntu-123.10.1, mixed mode, sharing)
 ```
 # Getting Ubuntu sound working in Fusion VM
+```
 https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Troubleshooting#stuttering-audio-in-virtual-machine
+mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
+cd ~/.config/wireplumber/wireplumber.conf.d
+```
+```
+monitor.alsa.rules = [
+  {
+    matches = [
+      # This matches the value of the 'node.name' property of the node.
+      {
+        node.name = "~alsa_output.*"
+      }
+    ]
+    actions = {
+      # Apply all the desired node specific settings here.
+      update-props = {
+        api.alsa.period-size   = 1024
+        api.alsa.headroom      = 8192
+      }
+    }
+  }
+]
+```
+
