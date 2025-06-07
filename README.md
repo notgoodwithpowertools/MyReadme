@@ -106,6 +106,10 @@ Download and create a local branch
 ```
 git clone https://github.com/notgoodwithpowertools/react-node-template.git react-node-template
 ```
+or, clone a specific branch
+```
+git clone --branch <branchname> <remote-repo-url>
+```
 Create a new repo and upload local environment
 - Go to Github and create new repo
 ```
