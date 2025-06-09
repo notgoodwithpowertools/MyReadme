@@ -66,6 +66,10 @@ sudo systemctl restart NetworkManager.service
 ```
 
 ## My useful git commands
+Check default branch name
+```
+git config --global init.defaultBranch main
+```
 Get status
 ```
 git status
