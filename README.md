@@ -293,3 +293,21 @@ But there is a simple solution to that problem. After adding some users you can 
 ```firebase emulators:start --import <export-directory> --export-on-exit <export-directory>``` 
 
 https://medium.com/@doaschdn/how-to-persist-your-data-with-firebase-emulators-567403a59394
+
+## Installing Ubuntu VM on ARM
+# Linux VM Setup
+- Enable folder sharing
+```
+sudo apt-get install open-vm-tools 
+sudo apt-get install open-vm-tools-desktop
+```
+# Get audio working
+```
+https://www.reddit.com/r/vmware/comments/1dq4t32/ubuntu_vm_on_vmware_fusion_pro_1352_having_issues/
+```
+# Install nvm and Node
+# [Install VSCode 64bit ARM](https://code.visualstudio.com/docs/?dv=linuxarm64_deb)
+- Setup Copilot
+
+
+
