@@ -66,6 +66,10 @@ sudo systemctl restart NetworkManager.service
 ```
 
 ## My useful git commands
+Rename main branch
+```
+git branch -m master main
+```
 Check default branch name
 ```
 git config --global init.defaultBranch main
