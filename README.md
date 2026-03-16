@@ -292,9 +292,7 @@ monitor.alsa.rules = [
 
 But there is a simple solution to that problem. After adding some users you can export your emulator’s state via firebase emulators:export <export-directory>. So the next time you start your emulators, simply use firebase emulators:start --import <export-directory> and all your precious previous configuration is restored. Phew!
 
-`firebase emulators:export <export-directory>`. So the next time you start your emulators, simply use firebase emulators:start --import <export-directory> and all your precious previous configuration is restored. Phew!
-
-```firebase emulators:start --import <export-directory> --export-on-exit <export-directory>``` 
+```firebase emulators:start --import <import-directory> --export-on-exit <export-directory>``` 
 
 https://medium.com/@doaschdn/how-to-persist-your-data-with-firebase-emulators-567403a59394
 
