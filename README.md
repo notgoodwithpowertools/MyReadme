@@ -263,6 +263,14 @@ openjdk version "17.0.10" 2024-01-16
 OpenJDK Runtime Environment (build 17.0.10+7-Ubuntu-123.10.1)
 OpenJDK 64-Bit Server VM (build 17.0.10+7-Ubuntu-123.10.1, mixed mode, sharing)
 ```
+## Persisting the emulator state
+
+But there is a simple solution to that problem. After adding some users you can export your emulator’s state via firebase emulators:export <export-directory>. So the next time you start your emulators, simply use firebase emulators:start --import <export-directory> and all your precious previous configuration is restored. Phew!
+
+```firebase emulators:start --import <import-directory> --export-on-exit <export-directory>``` 
+
+https://medium.com/@doaschdn/how-to-persist-your-data-with-firebase-emulators-567403a59394
+
 # Getting Ubuntu sound working in Fusion VM
 https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Troubleshooting#stuttering-audio-in-virtual-machine
 ```
@@ -288,13 +296,6 @@ monitor.alsa.rules = [
   }
 ]
 ```
-## Persisting the emulator state
-
-But there is a simple solution to that problem. After adding some users you can export your emulator’s state via firebase emulators:export <export-directory>. So the next time you start your emulators, simply use firebase emulators:start --import <export-directory> and all your precious previous configuration is restored. Phew!
-
-```firebase emulators:start --import <import-directory> --export-on-exit <export-directory>``` 
-
-https://medium.com/@doaschdn/how-to-persist-your-data-with-firebase-emulators-567403a59394
 
 ## Installing Ubuntu VM on ARM
 # Linux VM Setup
@@ -304,9 +305,28 @@ sudo apt-get install open-vm-tools
 sudo apt-get install open-vm-tools-desktop
 ```
 # Get audio working
-```
 https://www.reddit.com/r/vmware/comments/1dq4t32/ubuntu_vm_on_vmware_fusion_pro_1352_having_issues/
+
+Make sure to do the command line steps
 ```
+systemctl --user stop pipewire.socket
+systemctl --user stop pipewire.service
+systemctl --user disable pipewire.socket
+systemctl --user disable pipewire.service
+systemctl --user mask pipewire
+systemctl --user mask pipewire.socket
+sudo apt install pulseaudio
+systemctl --user unmask pulseaudio
+systemctl --user unmask pulseaudio.socket
+systemctl --user start pulseaudio.service
+systemctl --user enable pulseaudio.service
+```
+Then check if PulseAudio is running
+```
+pactl info
+```
+Then reboot the system
+
 # Install nvm and Node
 # [Install VSCode 64bit ARM](https://code.visualstudio.com/docs/?dv=linuxarm64_deb)
 - Setup Copilot
