@@ -153,7 +153,11 @@ It should ask you to authenticate
 
 # Installing NVM
 Check out https://github.com/creationix/nvm#verify-installation
-First install curl
+Option 1) Use wget
+```
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+```
+Option 2) Use Curl - First install curl
 ```
 sudo apt-get install curl
 
