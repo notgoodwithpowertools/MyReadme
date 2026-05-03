@@ -151,7 +151,7 @@ git push https://github.com/<userid>/<repository> master
 ```
 It should ask you to authenticate
 
-# Installing NVM
+# Installing Node using NVM
 Check out https://github.com/creationix/nvm#verify-installation
 Option 1) Use wget
 ```
