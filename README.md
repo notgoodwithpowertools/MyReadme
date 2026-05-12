@@ -334,6 +334,12 @@ Then reboot the system
 # Install nvm and Node
 # [Install VSCode 64bit ARM](https://code.visualstudio.com/docs/?dv=linuxarm64_deb)
 - Setup Copilot
+- sudo dpkg -i code_*.deb
+
+# Install Git
+$ sudo apt-get install git
+
+
 
 
 
