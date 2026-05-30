@@ -308,6 +308,11 @@ monitor.alsa.rules = [
 sudo apt-get install open-vm-tools 
 sudo apt-get install open-vm-tools-desktop
 ```
+# Video config
+Resolution 1920 x 1200 (16:10)
+Refresh rate: 59.95 Hz
+Scale: 100%
+
 # Get audio working
 https://www.reddit.com/r/vmware/comments/1dq4t32/ubuntu_vm_on_vmware_fusion_pro_1352_having_issues/
 
