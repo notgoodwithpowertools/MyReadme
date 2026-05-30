@@ -309,9 +309,16 @@ sudo apt-get install open-vm-tools
 sudo apt-get install open-vm-tools-desktop
 ```
 # Video config
+Acceptable
 Resolution 1920 x 1200 (16:10)
 Refresh rate: 59.95 Hz
 Scale: 100%
+
+**Best**
+Enable Retina full resolution
+Select 3024x1868
+Scale: 200%
+
 
 # Get audio working
 https://www.reddit.com/r/vmware/comments/1dq4t32/ubuntu_vm_on_vmware_fusion_pro_1352_having_issues/
