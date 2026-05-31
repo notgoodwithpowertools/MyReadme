@@ -65,7 +65,7 @@ or better
 sudo systemctl restart NetworkManager.service
 ```
 
-## My useful git commands
+# My useful git commands
 Rename main branch
 ```
 git branch -m master main
@@ -128,6 +128,36 @@ git checkout -b new_branch_name
 git push origin new_branch_name
 ```
 If you’re working out of another branch locally, you can either merge to master before pushing, or specify that you want to push your local branch to a remote master. 
+
+## Create new local branch for a new feature/function in Git
+1. Update your base branch
+Ensure you branch off the most recent code from your main development line.Switch back to your production or main branch:bashgit checkout main
+Use code with caution.Download the latest changes from your remote repository
+```bash
+git pull origin main
+```
+2. Create and switch to your new feature branch
+Pick a clear, descriptive name reflecting the new function (e.g., feature/login-validation).The Modern Way (Git 2.23+): Use git switch with the -c (create) flag.
+```bash
+git switch -c feature/your-new-function
+```
+The Traditional Way: Use git checkout with the -b flag
+```bash
+git checkout -b feature/your-new-function
+```
+Both operations simultaneously create the local branch pointer and move your active working directory (HEAD) into it.
+3. Verify your active branch
+Confirm that Git correctly moved you over to your isolated space before writing your function.
+```bash
+git branch
+```
+Your active branch will be highlighted with an asterisk (*) next to it.
+4. Push and track your new branch (Optional)
+When you are ready to back up your code online or open a pull request, publish it to your remote workspace.
+```bash
+git push -u origin feature/your-new-function
+```
+The -u (or --set-upstream) flag links your local branch with the remote host. For future updates, typing a simple git push will suffice.
 
 # Using Heroku
 - Install Heroku Toolbelt - Download toolbelt [toolbelt.heroku.com](http://toolbelt.heroku.com) `$ wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh`
